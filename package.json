@@ -4,11 +4,11 @@
   "description": "A TypeScript project with simple webpack configuration",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack",
+    "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development"
   },
   "keywords": [],
-  "author": "",
+  "author": "Davide R",
   "license": "ISC",
   "dependencies": {
     "ts-loader": "^9.2.6",

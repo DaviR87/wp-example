@@ -16,12 +16,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
+          filename: 'index.html', //Name of file in ./dist/
+          template: 'src/index.html', //Name of template
+          hash: true,
         }),
-    ],
+      ],
     output: {
+        publicPath: '/',
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-        clean: true
+        path: path.resolve(__dirname, 'dist')
     }
 };
