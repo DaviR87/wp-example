@@ -1,9 +1,9 @@
 export class Alert {
 	pressedBtn: HTMLElement = document.getElementsByClassName('btn')[0] as HTMLElement;
-	constructor () {
+	constructor() {
 		this.pressedBtn.addEventListener('click', () => {
-      console.log('Button clicked!')
-    });
+			console.log('Button clicked!')
+		});
 	}
 
 }
